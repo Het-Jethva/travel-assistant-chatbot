@@ -1,11 +1,16 @@
-import React from "react";
-import InputForm from "./components/InputForm";
+import React from 'react';
+import Header from './components/Header';
+import Chatbot from './components/Chatbot';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl font-bold text-center mt-10">Travel Assistant Chatbot</h1>
-      <InputForm />
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
+      <Header />
+      <main className="flex-grow">
+        <Chatbot />
+      </main>
+      <Footer />
     </div>
   );
 }

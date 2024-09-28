@@ -7,7 +7,6 @@ from pymongo import MongoClient
 # Load environment variables from .env file
 load_dotenv()
 
-
 def create_app():
     app = Flask(__name__)
     CORS(app)
@@ -19,7 +18,6 @@ def create_app():
 
     # Register routes
     from .routes import api_blueprint
-
     app.register_blueprint(api_blueprint)
 
     return app
